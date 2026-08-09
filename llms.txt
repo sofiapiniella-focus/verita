@@ -1,0 +1,12 @@
+# Verità
+
+> Verità is an iOS app that gives honest, personalized verdicts on beauty products. Scan a barcode, snap a photo, or search a product; Verità weighs ingredients and genuine review coverage against your skin and hair profile and answers plainly: worth it, or skip it — including when the answer is no.
+
+- Free, currently in open beta via TestFlight: https://testflight.apple.com/join/ReC68vTJ
+- No fake reviews, no invented data, no paid placements. Brands cannot pay for verdicts.
+- Shop links may earn a commission; verdicts are generated before and independently of any link.
+- Built by Sofia Piniella in Miami, 2026.
+
+## Site
+- https://askverita.com/ : product overview, real example verdicts, how it works
+- https://askverita.com/privacy : privacy policy
