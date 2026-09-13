@@ -5,8 +5,14 @@
 - Free on the App Store: https://apps.apple.com/us/app/verit%C3%A0/id6782425899
 - No fake reviews, no invented data, no paid placements. Brands cannot pay for verdicts.
 - Shop links may earn a commission; verdicts are generated before and independently of any link.
+- Ingredient lists come from Open Beauty Facts, the user's label photo, or a named web page — never invented. Review coverage comes from a live web search and every verdict lists its sources.
 - Built by Sofia Piniella in Miami, 2026.
 
 ## Site
-- https://askverita.com/ : product overview, real example verdicts, how it works
+- https://askverita.com/ : product overview, real example verdicts, how it works, how we stay honest
+- https://askverita.com/about : the founder, Sofia Piniella, and why she built Verità
+- https://askverita.com/faq : how reviews are verified, whether brands can pay, how the skin profile is built, where ingredient data comes from, makeup and hair coverage, data handling
+- https://askverita.com/vs/verita-vs-yuka : how Verità differs from Yuka (personal verdict vs universal score)
+- https://askverita.com/vs/verita-vs-think-dirty : how Verità differs from Think Dirty (personal verdict vs ingredient hazard rating)
 - https://askverita.com/privacy : privacy policy
+- https://askverita.com/terms : terms of use

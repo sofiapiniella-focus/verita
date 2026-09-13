@@ -15,7 +15,10 @@
 <meta name="twitter:description" content="Scan any beauty product. Get an honest verdict for your skin — including no.">
 <meta name="twitter:image" content="https://askverita.com/og.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Verità","applicationCategory":"LifestyleApplication","operatingSystem":"iOS","description":"Scan, snap, or search any beauty product — Verità gives an honest, personalized verdict: worth it, or skip it.","url":"https://askverita.com","downloadUrl":"https://apps.apple.com/us/app/verit%C3%A0/id6782425899","installUrl":"https://apps.apple.com/us/app/verit%C3%A0/id6782425899","sameAs":["https://apps.apple.com/us/app/verit%C3%A0/id6782425899"],"author":{"@type":"Person","name":"Sofia Piniella"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Verità","applicationCategory":"LifestyleApplication","operatingSystem":"iOS","description":"Scan, snap, or search any beauty product — Verità gives an honest, personalized verdict: worth it, or skip it.","url":"https://askverita.com","downloadUrl":"https://apps.apple.com/us/app/verit%C3%A0/id6782425899","installUrl":"https://apps.apple.com/us/app/verit%C3%A0/id6782425899","sameAs":["https://apps.apple.com/us/app/verit%C3%A0/id6782425899"],"author":{"@type":"Person","name":"Sofia Piniella","url":"https://askverita.com/about"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Verità","url":"https://askverita.com","logo":"https://askverita.com/og.png","description":"Verità is the honest beauty-verdict app: scan, snap, or search any beauty product and get a personalized verdict — worth it, or skip it. Brands cannot pay for verdicts.","foundingDate":"2026","foundingLocation":{"@type":"Place","name":"Miami, FL"},"founder":{"@type":"Person","name":"Sofia Piniella","url":"https://askverita.com/about"},"email":"info@askverita.com","sameAs":["https://apps.apple.com/us/app/verit%C3%A0/id6782425899"]}
 </script>
 <link rel="canonical" href="https://askverita.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,6 +34,7 @@
   body{font-family:'Inter',sans-serif;font-weight:300;color:var(--soft);background:var(--paper);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased;}
   a{color:inherit;}
   a:focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
+  img{max-width:100%;height:auto;}
   .serif{font-family:'Newsreader',serif;font-weight:500;}
   .hand{font-family:'La Belle Aurore',cursive;color:var(--ink);}
 
@@ -72,14 +76,24 @@
   .kicker{font-size:11px;letter-spacing:.26em;color:var(--soft);font-weight:500;margin-bottom:18px;}
   .crossed{font-family:'Newsreader',serif;font-weight:400;font-size:clamp(22px,2.6vw,30px);color:var(--muted);text-decoration:line-through;text-decoration-thickness:2px;margin-bottom:6px;}
   .cover h1{font-size:clamp(52px,8vw,96px);line-height:1;color:var(--ink);margin-bottom:34px;}
-  .cover-hand{display:block;font-size:clamp(46px,7vw,84px);line-height:1.15;margin-bottom:34px;font-weight:400;}
-  .cover .sub{font-size:clamp(16px,1.6vw,19px);max-width:52ch;color:var(--soft);margin-bottom:44px;}
+  .cover-hand{display:block;font-size:clamp(38px,4.8vw,58px);line-height:1.15;margin-bottom:34px;font-weight:400;}
+  .cover .sub{font-size:clamp(16px,1.6vw,19px);max-width:52ch;color:var(--soft);margin-bottom:18px;}
   .cover .sub em{font-family:'Newsreader',serif;font-style:italic;color:var(--ink);}
+  .notfor-hero{font-size:13.5px;line-height:1.6;color:var(--muted);max-width:52ch;margin-bottom:44px;}
   .cover-note{margin:40px 0 12px;font-size:clamp(24px,2.6vw,30px);}
   .cover-cta{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:10px;}
-  .alt-cta{font-size:13px;color:var(--muted);margin-top:16px;}
+  .alt-cta{font-size:13px;color:var(--muted);margin-top:26px;}
   .alt-cta a{color:var(--soft);}
+  .alt-cta .form{max-width:420px;margin-top:10px;}
   .cover-cta .tiny{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);}
+  /* App Store rating (D3.5) — stays hidden until the listing has 10+ ratings; fill data-rating / data-count from App Store Connect. */
+  .rating{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);}
+
+  /* ─── PROOF (D3.1) — hidden until a real number exists ─── */
+  .proof{padding-top:0;padding-bottom:0;border-top:none;}
+  .proof-line{font-family:'Newsreader',serif;font-weight:500;font-size:clamp(20px,2.4vw,26px);color:var(--ink);padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .proof-line .n{font-weight:600;}
+  .proof-src{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:6px;}
 
   /* ─── HOW ─── */
   .how-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:44px;}
@@ -97,10 +111,18 @@
   .e-v{font-family:'Newsreader',serif;font-weight:500;font-size:clamp(19px,2vw,23px);white-space:nowrap;color:var(--ink);}
   .entry-note{margin-top:34px;font-size:24px;transform:rotate(-1.5deg);display:inline-block;}
   .e-context{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:2px;}
+  /* entries + phone frame (D1.5) */
+  .entries-grid{display:grid;grid-template-columns:1fr 250px;gap:64px;align-items:start;}
+  .phone-col{position:sticky;top:40px;}
+  .phone{width:100%;max-width:250px;margin:0 auto;border:1.5px solid var(--ink);border-radius:30px;padding:12px 8px 14px;background:var(--paper);box-shadow:0 26px 60px -28px rgba(20,18,16,.35);}
+  .phone::before{content:"";display:block;width:70px;height:6px;background:var(--ink);border-radius:3px;margin:0 auto 10px;}
+  .phone img{display:block;width:100%;height:auto;border-radius:16px;}
+  .phone-cap{display:block;text-align:center;font-size:20px;transform:rotate(-2deg);margin-top:16px;}
+  .phone-src{display:block;text-align:center;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:6px;}
 
   .scrap{position:relative;width:100%;aspect-ratio:10/5.4;margin-top:32px;}
   .scrap-item{position:absolute;}
-  .scrap-item img{width:100%;display:block;}
+  .scrap-item img{width:100%;height:auto;display:block;}
   .scrap .cap{font-family:'La Belle Aurore',cursive;font-size:clamp(11px,1.8vw,18px);color:var(--ink);text-align:center;margin-top:2px;transform:rotate(-2deg);}
   .papernote{background:repeating-linear-gradient(#FFFDF8 0 1.6em, #E8E2D4 1.6em calc(1.6em + 1px));padding:1.2em 1em 1em;box-shadow:0 8px 20px -10px rgba(20,18,16,.3);line-height:1.6em;}
   .papernote::before{content:"";position:absolute;top:-8px;left:50%;transform:translateX(-50%) rotate(-3deg);width:52px;height:16px;background:rgba(222,214,196,.85);}
@@ -155,18 +177,34 @@
   .ind-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:44px;}
   .ind-item h3{font-family:'Newsreader',serif;font-weight:500;font-size:21px;color:var(--ink);margin-bottom:10px;}
   .ind-item p{font-size:14px;}
+  .ind-head{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:start;margin-bottom:40px;}
+  .ind-head .page-label{margin-bottom:0;}
+  .ind-note{position:relative;width:210px;transform:rotate(1.5deg);margin-top:-6px;}
+  .ind-note .hand{font-size:19px;}
+  .f-more{font-size:13px;color:var(--soft);margin-top:10px;display:inline-block;}
+  /* testimonial wall (D3.2) — hidden until real, named quotes exist */
+  .quotes-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:36px;}
+  .quote{border-top:1px solid var(--line);padding-top:18px;}
+  .quote p{font-family:'Newsreader',serif;font-weight:400;font-size:18px;color:var(--ink);line-height:1.4;margin-bottom:12px;}
+  .quote .who{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
+  .quote .who img{width:36px;height:36px;object-fit:cover;filter:grayscale(1);}
   .notfor{font-size:14px;max-width:38ch;margin:-10px 0 24px;}
   .close .hand{font-size:clamp(34px,5vw,52px);display:inline-block;transform:rotate(-1deg);margin-bottom:36px;line-height:1.3;}
   .close .arrow{width:70px;height:44px;display:block;margin:6px 0 26px 14px;}
   .close .arrow path{stroke:var(--ink);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
   footer{max-width:1060px;margin:0 auto;padding:40px 8vw 60px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:12px;color:var(--muted);}
   footer .fb{font-family:'Newsreader',serif;font-weight:500;font-size:16px;color:var(--ink);text-decoration:none;}
-  footer nav{display:flex;gap:26px;}
+  footer nav{display:flex;gap:18px 26px;flex-wrap:wrap;}
   footer nav a{text-decoration:none;}
 
   @media(max-width:860px){
     .page{padding:44px 7vw;}
     .how-grid{grid-template-columns:1fr;gap:40px;}
+    .entries-grid{grid-template-columns:1fr;gap:40px;}
+    .phone-col{position:static;}
+    .ind-head{grid-template-columns:1fr;gap:20px;}
+    .ind-note{width:190px;margin-top:0;}
+    .quotes-grid{grid-template-columns:1fr;gap:24px;}
     .pocket-grid{grid-template-columns:1fr;gap:48px;}
     .close-grid{grid-template-columns:1.15fr .85fr;gap:16px;align-items:center;}
     .close-photo{justify-self:end;max-width:150px;max-height:none;margin-top:0;}
@@ -191,14 +229,22 @@
     .founder{flex-direction:row;align-items:flex-start;}
   }
 
+  /* Mobile collage (D2.5): under 600px the absolutely-positioned scrapbook becomes a
+     two-column grid of the real screenshots + the papernote; decorative crops are hidden. */
+  @media(max-width:600px){
+    .scrap{aspect-ratio:auto;display:grid;grid-template-columns:1fr 1fr;gap:34px 22px;align-items:start;margin-top:44px;padding-top:10px;}
+    .scrap-item{position:static !important;width:100% !important;}
+    .scrap-item.m-hide,.scrap-item.m-deco{display:none;}
+    .scrap-item.papernote{grid-column:1 / -1;order:10;width:min(100%,240px) !important;justify-self:center;margin-top:4px;}
+    .scrap .cap{font-size:15px;}
+  }
+
   @media(max-width:480px){
     .entry-photo-1{width:140px;margin-right:-28px;}
     .entry-photo-2{width:112px;transform:rotate(4deg) translateY(22px);margin-right:-22px;}
     .entry-photo-3{width:98px;transform:rotate(-2deg) translateY(6px);}
     .page-label{flex-direction:column;align-items:flex-start;gap:4px;}
     .scrap-note{left:40% !important;font-size:12px;}
-    .scrap{aspect-ratio:10/6;}
-    .scrap-item.m-hide{display:none;}
   }
 </style>
 </head>
@@ -206,21 +252,31 @@
 
 <!-- ═══ PAGE 1 · COVER ═══ -->
 <section class="page cover">
-  <div class="masthead"><span>verità.</span><nav class="topnav"><a href="#how">how it works</a><a href="#entries">entries</a><a href="#rules">field notes</a><a href="#get" class="navget">get the app</a></nav></div>
+  <div class="masthead"><span>verità.</span><nav class="topnav"><a href="#how">how it works</a><a href="#entries">entries</a><a href="#rules">field notes</a><a href="/about">about</a><a href="/faq">faq</a><a href="#get" class="navget">get the app</a></nav></div>
   <div class="kicker">THE HONEST BEAUTY-VERDICT APP</div>
   <div class="crossed">my beauty journal</div>
-  <h1 class="hand cover-hand"><span class="uwrap draw">the honest one.<svg viewBox="0 0 620 20" preserveAspectRatio="none" style="left:0;bottom:-.06em;width:100%;"><path d="M6 12 C 140 4, 300 19, 460 9 S 580 14, 610 8" stroke-width="4"/></svg></span></h1>
+  <h1 class="hand cover-hand"><span class="uwrap draw">the honest<br>beauty-verdict app.<svg viewBox="0 0 620 20" preserveAspectRatio="none" style="left:0;bottom:-.06em;width:100%;"><path d="M6 12 C 140 4, 300 19, 460 9 S 580 14, 610 8" stroke-width="4"/></svg></span></h1>
   <p class="sub">Scan, snap, or search any beauty product — Verità reads the ingredients, listens to real reviews, and tells you plainly: <em>worth it, or skip it.</em> Including when the answer is no. Especially then.</p>
+  <p class="notfor-hero">Not for clinicians. Not for brand-deal beauty. Not if you want someone to tell you everything is worth it.</p>
   <div class="cover-note hand">everything I wish I knew before I bought it →</div>
   <div class="cover-cta">
     <a class="appstore" data-placement="cover" href="https://apps.apple.com/us/app/verit%C3%A0/id6782425899" aria-label="Download Verità on the App Store"><img src="/app-store-badge.svg" alt="Download on the App Store" width="162" height="54"></a>
     <span class="tiny">Free · iPhone · on the App Store now</span>
+    <!-- D3.5: App Store rating. Keep hidden until the listing shows 10+ ratings, then fill both numbers from App Store Connect and remove `hidden`. Never estimate. -->
+    <span class="rating" hidden data-rating="" data-count="">★ <span class="r-val"></span> · <span class="r-count"></span> ratings on the App Store</span>
   </div>
-  <div class="alt-cta">Prefer a note now and then? <a href="#" id="waitlist-toggle">Get updates by email</a>
-  <div id="waitlist-form" hidden style="max-width:420px;margin-top:14px;">
-    <iframe data-tally-src="https://tally.so/embed/b5MbqE?alignLeft=1&hideTitle=1&transparentBackground=1" loading="lazy" width="100%" height="100" frameborder="0" marginheight="0" marginwidth="0" title="Get updates by email"></iframe>
+  <div class="alt-cta">Prefer a note now and then? Get updates by email.
+    <div class="form">
+      <iframe data-tally-src="https://tally.so/embed/b5MbqE?alignLeft=1&hideTitle=1&transparentBackground=1" loading="lazy" width="100%" height="100" frameborder="0" marginheight="0" marginwidth="0" title="Get updates by email"></iframe>
+    </div>
   </div>
-  </div>
+</section>
+
+<!-- D3.1: social proof. Stays hidden until a real number exists. To turn on, put the
+     number in data-count (downloads from App Store Connect, or email signups from Tally),
+     name the source in .proof-src, and remove `hidden` from the section. Never estimate. -->
+<section class="page proof" hidden>
+  <p class="proof-line"><span class="n" data-count=""></span> people already carry Verità in their pocket.<span class="proof-src">App Store downloads · updated monthly</span></p>
 </section>
 
 <!-- ═══ PAGE 2 · HOW ═══ -->
@@ -250,6 +306,8 @@
   <div class="page-label"><span>Recent entries</span><span>real verdicts, from the app</span></div>
   <p class="entries-intro">Every entry below is a real verdict Verità gave, unedited — for a combination, breakout-prone profile. Yours will be personalized to you.</p>
 
+  <div class="entries-grid">
+  <div class="entries-list">
   <div class="entry">
     <div>
       <div class="e-brand">Elemis</div>
@@ -290,9 +348,19 @@
   </div>
 
   <div class="e-context">verdicts vary by profile · that's the point</div>
+  </div>
+
+  <div class="phone-col">
+    <!-- D1.5: the real Elemis verdict screen. This crop shows the product, the verdict, and the tab row; the "For you" rationale
+         starts at the bottom edge. Swap in a full-height screenshot of the same screen (like /img/home-tall.jpg, 560×1213) when taken. -->
+    <div class="phone"><img src="/img/verdict-elemis.jpg" width="440" height="348" loading="lazy" alt="Real Verità verdict screen: Elemis Pro-Collagen Marine Cream — Verità says: Not worth it."></div>
+    <span class="phone-cap hand">the elemis verdict, in the app</span>
+    <span class="phone-src">actual screenshot · unedited</span>
+  </div>
+  </div>
 
   <div class="scrap">
-    <div class="scrap-item photo" style="left:3%;top:0%;width:26%;transform:rotate(-2deg);z-index:2;">
+    <div class="scrap-item photo m-deco" style="left:3%;top:0%;width:26%;transform:rotate(-2deg);z-index:2;">
       <img src="/img/curlers.jpg" width="440" height="550" loading="lazy" alt="Girl in curlers photographing herself in the bathroom mirror, black and white.">
     </div>
     <div class="scrap-item photo" style="left:22%;top:10%;width:31%;transform:rotate(1.5deg);z-index:3;">
@@ -302,7 +370,7 @@
     <div class="scrap-item papernote" style="left:7%;top:66%;width:22%;transform:rotate(-1.5deg);z-index:4;">
       <span class="hand" style="font-size:clamp(12px,1.9vw,19px);">no fake reviews,<br>ever.</span>
     </div>
-    <div class="scrap-item photo" style="left:36%;top:56%;width:18%;transform:rotate(2deg);z-index:2;">
+    <div class="scrap-item photo m-deco" style="left:36%;top:56%;width:18%;transform:rotate(2deg);z-index:2;">
       <img src="/img/moisturizer.jpg" width="360" height="450" loading="lazy" alt="Applying moisturizer, close crop.">
     </div>
     <div class="scrap-item photo m-hide" style="left:56%;top:0%;width:19%;transform:rotate(2deg);z-index:1;">
@@ -368,18 +436,35 @@
 
 <!-- ═══ PAGE 5B · INDEPENDENCE ═══ -->
 <section class="page" id="honest">
-  <div class="page-label"><span>How we stay honest</span><span>the rules we can't break</span></div>
+  <div class="ind-head">
+    <div class="page-label"><span>How we stay honest</span><span>the rules we can't break</span></div>
+    <div class="ind-note papernote"><span class="hand">no brand pays for a verdict. ever.</span></div>
+  </div>
   <div class="ind-grid">
-    <div class="ind-item"><h3>Brands can't pay for verdicts.</h3><p>No sponsorships, no placements, no "partner scores." There is no price for a "worth it."</p></div>
-    <div class="ind-item"><h3>Shop links never change a verdict.</h3><p>Some buy links earn us a small commission — the verdict is generated before, and independently of, any link.</p></div>
-    <div class="ind-item"><h3>Verdicts read real reviews.</h3><p>Fresh verdicts are built from genuine review coverage, and the sources are shown in the app — so you can check us.</p></div>
+    <div class="ind-item"><h3>No brand pays for a verdict. Ever.</h3><p>No sponsorships, no placements, no "partner scores." There is no price for a "worth it."</p></div>
+    <div class="ind-item"><h3>Shop links never change a verdict.</h3><p>Shop links may earn a commission, but verdicts are generated before and independently of any link.</p></div>
+    <div class="ind-item"><h3>Where the data comes from.</h3><p>Ingredient lists come from <a href="https://world.openbeautyfacts.org/" rel="noopener">Open Beauty Facts</a>, a public product database, from the label you photograph, or from a web page we name — never invented. If none has a list, the app says so. Review coverage comes from a live web search, and every verdict lists the sources it read, so you can check us.</p></div>
   </div>
   <div class="founder">
     <div class="photo" style="width:130px;transform:rotate(-2deg);flex-shrink:0;"><img src="/img/sofia.jpg" width="300" height="329" loading="lazy" alt="Sofia Piniella, founder of Verità, in a photo booth." style="width:100%;display:block;"></div>
     <div>
       <p class="f-note">Verità is built by one person — <strong>Sofia Piniella</strong>, a business analytics student in Miami who got tired of buying products that weren't worth it. Every verdict rule on this page is one I have to live with too.</p>
-      <span class="hand" style="font-size:26px;display:inline-block;transform:rotate(-2deg);margin-top:8px;">— Sof</span>
+      <span class="hand" style="font-size:26px;display:inline-block;transform:rotate(-2deg);margin-top:8px;">— Sof</span><br>
+      <a class="f-more" href="/about">why I built this →</a>
     </div>
+  </div>
+</section>
+
+<!-- D3.2: notes from real users. Stays hidden until 5 named quotes exist. For each card: the quote exactly as the person
+     wrote it, first name, skin type, and (optional) a photo they approved. Then remove `hidden`. Never write these yourself. -->
+<section class="page" id="notes" hidden>
+  <div class="page-label"><span>Notes from users</span><span>in their words</span></div>
+  <div class="quotes-grid">
+    <div class="quote"><p>“QUOTE”</p><div class="who"><img src="" alt="" width="36" height="36"><span>FIRST NAME · SKIN TYPE</span></div></div>
+    <div class="quote"><p>“QUOTE”</p><div class="who"><img src="" alt="" width="36" height="36"><span>FIRST NAME · SKIN TYPE</span></div></div>
+    <div class="quote"><p>“QUOTE”</p><div class="who"><img src="" alt="" width="36" height="36"><span>FIRST NAME · SKIN TYPE</span></div></div>
+    <div class="quote"><p>“QUOTE”</p><div class="who"><img src="" alt="" width="36" height="36"><span>FIRST NAME · SKIN TYPE</span></div></div>
+    <div class="quote"><p>“QUOTE”</p><div class="who"><img src="" alt="" width="36" height="36"><span>FIRST NAME · SKIN TYPE</span></div></div>
   </div>
 </section>
 
@@ -400,8 +485,12 @@
 </section>
 
 <footer>
-  <a class="fb" href="#">verità</a>
+  <a class="fb" href="/">verità</a>
   <nav>
+    <a href="/about">About</a>
+    <a href="/faq">FAQ</a>
+    <a href="/vs/verita-vs-yuka">vs Yuka</a>
+    <a href="/vs/verita-vs-think-dirty">vs Think Dirty</a>
     <a href="/privacy">Privacy</a>
     <a href="/terms">Terms</a>
     <a href="mailto:info@askverita.com">Contact</a>
@@ -410,20 +499,22 @@
 </footer>
 
 <script>
-document.getElementById('waitlist-toggle').addEventListener('click', function(e){
-  e.preventDefault();
-  var box = document.getElementById('waitlist-form');
-  var show = box.hidden;
-  box.hidden = !show;
-  this.textContent = show ? 'Never mind' : 'Get updates by email';
-  if (show && !window.__tallyLoaded) {
-    window.__tallyLoaded = true;
+// Email form is visible by default (D2.2); the Tally embed loads once the page has painted.
+(function(){
+  var load = function(){
     var v = function(){ if (typeof Tally !== 'undefined') { Tally.loadEmbeds(); } else { document.querySelectorAll('iframe[data-tally-src]:not([src])').forEach(function(el){ el.src = el.dataset.tallySrc; }); } };
     var s = document.createElement('script');
     s.src = 'https://tally.so/widgets/embed.js';
     s.onload = v; s.onerror = v;
     document.body.appendChild(s);
-  }
+  };
+  if (document.readyState === 'complete') { load(); } else { window.addEventListener('load', load); }
+})();
+// Hidden proof / rating stubs (D3.1, D3.5): fill in the data attributes once real numbers exist.
+document.querySelectorAll('.proof .n[data-count]').forEach(function(el){ el.textContent = el.dataset.count; });
+document.querySelectorAll('.rating[data-rating]').forEach(function(el){
+  el.querySelector('.r-val').textContent = el.dataset.rating;
+  el.querySelector('.r-count').textContent = el.dataset.count;
 });
 </script>
 <script type="module">
