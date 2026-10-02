@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>support — verità</title>
+<meta name="description" content="Help with the Verità app: email info@askverita.com. A real person reads every message.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://askverita.com/support">
+<meta property="og:title" content="support — verità">
+<meta property="og:description" content="Help with the Verità app: email info@askverita.com.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://askverita.com/support">
+<meta property="og:image" content="https://askverita.com/og.png">
+<meta name="theme-color" content="#FAF9F6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@300;400;500&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+<style>
+  .mail{display:inline-block;font-family:var(--serif);font-weight:500;font-size:clamp(24px,5vw,30px);color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:2px;margin:4px 0 28px;}
+  .include{list-style:none;border-top:1px solid var(--line);max-width:62ch;margin-bottom:28px;}
+  .include li{padding:13px 0;border-bottom:1px solid var(--line);font-size:15px;}
+</style>
+</head>
+<body>
+<header class="mast"><a class="wordmark" href="/">verità</a><nav><a href="/">home</a><a href="/faq">faq</a><a class="get" data-placement="support-nav" href="https://apps.apple.com/us/app/verit%C3%A0/id6782425899">get the app</a></nav></header>
+<main class="doc">
+  <div class="eyebrow">support</div>
+  <h1>need a hand? email us.</h1>
+  <p class="intro">a real person (the founder) reads every message.</p>
+  <a class="mail" href="mailto:info@askverita.com?subject=verit%C3%A0%20support">info@askverita.com</a>
+
+  <h2>what to include</h2>
+  <ul class="include">
+    <li>what happened, and what you expected instead</li>
+    <li>the product name or barcode, if it's about a verdict</li>
+    <li>your iPhone model and iOS version</li>
+    <li>a screenshot, if you can</li>
+  </ul>
+  <p>please don't send passwords. to delete your account and its data, use settings in the app, or email us and we'll do it for you.</p>
+
+  <h2>before you write</h2>
+  <p>most questions about how verdicts work, where the data comes from, and what happens to your profile are answered in the <a href="/faq">faq</a>. the <a href="/privacy">privacy policy</a> and <a href="/terms">terms</a> are one page each.</p>
+</main>
+<footer>
+  <div class="foot">
+    <a class="wordmark" href="/">verità</a>
+    <nav aria-label="legal and contact"><a href="/privacy">privacy</a><a href="/terms">terms</a><a href="/support">support</a><a href="https://www.instagram.com/askverita/" rel="noopener">instagram</a></nav>
+    <nav class="more" aria-label="more"><a href="/about">about</a><a href="/faq">faq</a><a href="/vs/verita-vs-yuka">verità vs Yuka</a><a href="/vs/verita-vs-think-dirty">verità vs Think Dirty</a></nav>
+    <small>© 2026 verità · no fake reviews, ever.</small>
+  </div>
+</footer>
+<script type="module">
+  // HeyCatch analytics — pinned ESM import (no build step), key is publishable.
+  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';
+  analytics.init({ projectKey: 'hck_pk_44uyM-4j_QP7_OfkhimrYhVSZeRVIWxB', install: { framework: 'web', agent: 'claude-code' } });
+  document.querySelectorAll('a[data-placement]').forEach(function (a) {
+    a.addEventListener('click', function () { analytics.trackEvent('app_store_click', { placement: a.dataset.placement }); });
+  });
+</script>
+</body>
+</html>
