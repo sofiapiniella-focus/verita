@@ -43,6 +43,8 @@ footer{border-top:1px solid var(--line);margin-top:24px;}
 .foot nav a{font-size:12px;font-weight:400;letter-spacing:.02em;text-decoration:none;color:var(--ink);}
 .foot nav.more a{color:var(--muted);}
 .foot small{font-size:12px;color:var(--muted);}
+.foot .medical{font-size:12px;line-height:1.6;color:var(--muted);max-width:60ch;}
+.foot .medical a{color:var(--soft);}
 
 /* ─── document pages (about, faq, vs, support, privacy, terms) ─── */
 .doc{max-width:720px;margin:0 auto;padding:40px var(--gutter) 72px;}
